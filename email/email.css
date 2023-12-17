@@ -1,23 +1,29 @@
+html,
 body {
   margin: 0;
 }
-
 
 .my-container {
   border: 1px solid green;
 }
 
-
-.my-row {
+.my-row-1 {
   border: 3px solid red;
-  height: 300px;
 }
 
+.my-row-2 {
+  border: 3px solid red;
+}
 
-.my-col {
+.my-col-1 {
   border: 3px dotted blue;
+  height: 10vh;
 }
 
+.my-col-2 {
+  border: 3px dotted blue;
+  height: 90vh;
+}
 
 #special-col {
   display: flex;
