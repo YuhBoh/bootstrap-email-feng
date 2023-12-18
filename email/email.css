@@ -11,18 +11,72 @@ body {
   border: 3px solid red;
 }
 
+.my-col-1 {
+  padding: 0;
+}
+
+.btn {
+  width: 50px;
+  padding: 0;
+}
+
+.r {
+  width: 40px;
+  align-items: center;
+}
+
+.form .fa-search {
+  color: #9ca3af;
+}
+
+.form span {
+  border-left: 1px solid #d1d5db;
+}
+
+.left-pan {
+  padding-left: 7px;
+}
+
+.left-pan i {
+  padding-left: 10px;
+}
+
+.form-input {
+  height: 25px;
+  border-radius: 10px;
+  font-size: small;
+  min-width: 20px;
+
+}
+
+.form-input:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler {
+  padding: 0;
+  align-self: center;
+}
+
+.y {
+  width: 50px;
+}
+
 .my-row-2 {
   border: 3px solid red;
 }
 
 .my-col-1 {
   border: 3px dotted blue;
-  height: 10vh;
+  height: 15vh;
 }
 
 .my-col-2 {
   border: 3px dotted blue;
-  height: 90vh;
+  height: 85vh;
+}
+
+.navbar-toggler-icon {
 }
 
 #special-col {
