@@ -1,85 +1,83 @@
-html,
 body {
   margin: 0;
+}
+
+.burg {
+  width: 30px;
+  height: 30px;
+}
+
+.burg-div {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+.col {
+  padding: 0;
+}
+
+.logo-div {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  align-self: center;
 }
 
 .my-container {
   border: 1px solid green;
 }
 
-.my-row-1 {
+.my-row {
   border: 3px solid red;
+  height: 80px;
 }
 
-.my-col-1 {
-  padding: 0;
+@media screen and (max-height: 574px) {
+  .my-row {
+    height: 80px;
+  }
 }
-
-.btn {
-  width: 50px;
-  padding: 0;
-}
-
-.r {
-  width: 40px;
-  align-items: center;
-}
-
-.form .fa-search {
-  color: #9ca3af;
-}
-
-.form span {
-  border-left: 1px solid #d1d5db;
-}
-
-.left-pan {
-  padding-left: 7px;
-}
-
-.left-pan i {
-  padding-left: 10px;
-}
-
-.form-input {
-  height: 25px;
-  border-radius: 10px;
-  font-size: small;
-  min-width: 20px;
-
-}
-
-.form-input:focus {
-  box-shadow: none;
-}
-
-.navbar-toggler {
-  padding: 0;
-  align-self: center;
-}
-
-.y {
-  width: 50px;
-}
-
 .my-row-2 {
   border: 3px solid red;
-}
-
-.my-col-1 {
-  border: 3px dotted blue;
-  height: 15vh;
-}
-
-.my-col-2 {
-  border: 3px dotted blue;
   height: 85vh;
 }
 
-.navbar-toggler-icon {
+.my-col {
+  border: 3px dotted blue;
+}
+
+.search-bar {
+  align-self: center;
+  font-size: 10px;
+  height: 20px;
+}
+
+.search-div {
+  display: flex;
+  justify-content: center;
 }
 
 #special-col {
   display: flex;
   justify-content: center;
+}
+
+.user-div {
+  display: flex;
+  justify-content: center;
+}
+
+.user {
+  width: 50px;
+  height: 50px;
+  align-self: center;
 }

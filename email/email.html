@@ -6,9 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hello World</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="email.css">
@@ -17,82 +15,58 @@
 <body>
   <div class="container-fluid my-container">
 
-    <!-- Bootstrap Grid can have up to 12 columns per row -->
-    <!-- If no column numbers are specified then all of the columns share the same amount of the row -->
-
-    <div class="row my-row-1">
-
-      <nav class="col my-col-1 navbar">
-        <button class="navbar-toggler" type="button" data-toggle="collapse">
-          <input class="btn" type="image" src="/images/burg.png" />
+    <div class="row my-row">
+      <!-- HAMBURGER MENU -->
+      <div class="col my-col burg-div">
+        <button>
+          <img class="burg" src="/images/burg.jpg" alt="">
         </button>
-      </nav>
-
-      <div class="col my-col-1 d-flex flex-wrap align-items-center"><img class="r" src="/images/r.png"/></div>
-
-      <div class="col my-col-1 d-flex flex-wrap justify-content-center align-items-center">
-        <div class="col-md-6">
-          <div class="form">
-            <input type="text" class="form-control form-input" placeholder="Search">
-            <span class="input-group-btn"></span>
-          </div>
-        </div>        
       </div>
 
+      <!-- LOGO -->
+      <div class="col my-col logo-div">
+        <img class="logo" src="/images/r.png" alt="logo"/>
+      </div>
 
-      <div class="col my-col-1 d-flex flex-wrap justify-content-center"><img class="y" src="/images/y.png"/></div>
+      <!-- Search Bar -->
+      <div class="col my-col search-div">
+        <input class="search-bar form-control" type="search" placeholder="Search" aria-label="Search">
+      </div>
 
+      <!-- ACCOUNT USER -->
+      <div class="col my-col user-div">
+        <img class="user" src="/images/y.png" alt="account logo">
+      </div>
     </div>
 
-    <div class="row my-row-2" style="height: 90vh;">
-      <div class="panel-group col-sm-12 col-lg-6 my-col-2" id="accordion">
-        <div class="container">
-          <h2>Accordion Example</h2>
-          <p><strong>Note:</strong> The <strong>data-parent</strong> attribute makes sure that all collapsible elements under
-            the specified parent will be closed when one of the collapsible item is shown.</p>
-          <div class="panel-group" id="accordion">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Collapsible Group 1</a>
-                </h4>
-              </div>
-              <div id="collapse1" class="panel-collapse collapse in">
-                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-              </div>
-            </div>
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Collapsible Group 2</a>
-                </h4>
-              </div>
-              <div id="collapse2" class="panel-collapse collapse">
-                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+    <!-- EMAIL CONTENT -->
+    <div class="row my-row-2">
+      <div class="col-sm-12 my-col">
+        
+        <div class="accordion" id="accordionExample" style="width: 100%;">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                Accordion Item #1
+              </button>
+            </h2>
+
+            <div id="collapseOne" class="accordion-collapse collapse show"      aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                
               </div>
             </div>
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Collapsible Group 3</a>
-                </h4>
-              </div>
-              <div id="collapse3" class="panel-collapse collapse">
-                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-              </div>
-            </div>
+
           </div>
         </div>
       </div>
     </div>
-    
   </div>
+
+
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
