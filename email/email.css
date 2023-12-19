@@ -46,6 +46,7 @@ button {
     height: 80px;
   }
 }
+
 .my-row-2 {
   border: 3px solid red;
   height: 85vh;
@@ -53,6 +54,7 @@ button {
 
 .my-col {
   border: 3px dotted blue;
+  padding: 0;
 }
 
 .search-bar {
@@ -62,11 +64,6 @@ button {
 }
 
 .search-div {
-  display: flex;
-  justify-content: center;
-}
-
-#special-col {
   display: flex;
   justify-content: center;
 }
