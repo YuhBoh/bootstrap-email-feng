@@ -36,13 +36,16 @@ button {
   border: 1px solid green;
 }
 
-.my-row {
+.my-row-3 {
   border: 3px solid red;
   height: 80px;
+  width: 100%;
+  margin-left: -1px;
 }
 
 @media screen and (max-height: 574px) {
-  .my-row {
+  .my-row-1 {
+    border: 3px solid red;
     height: 80px;
   }
 }
